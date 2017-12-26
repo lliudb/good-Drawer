@@ -21,6 +21,7 @@ class Div {
     console.log(canvas.attributes)
     dom.appendChild(canvas)
 
+    this.id = canvasId
     this._canvas = document.getElementById(canvasId)
     this._cxt = this._canvas.getContext('2d')
   }

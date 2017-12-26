@@ -186,6 +186,7 @@ class Core {
     if (this._divInfo.current === div) {
       console.log('不能移除当前层')
     } else {
+      document.removeChild(document.getElementById(this._divs[div].id))
       delete this._divs[div]
     }
   }
